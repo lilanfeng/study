@@ -22,9 +22,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:unknown" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-thymeleaf:unknown" level="project" />
-    <orderEntry type="library" name="Maven: org.projectlombok:lombok:unknown" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-all:unknown" level="project" />
   </component>
 </module>

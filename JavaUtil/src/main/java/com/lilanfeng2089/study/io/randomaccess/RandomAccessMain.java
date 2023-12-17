@@ -33,7 +33,7 @@ public class RandomAccessMain {
     }
 
 
-        public static void main(String args[]){
+        public static void main1(String args[]){
 
             try{
                 PrintWriter out = new PrintWriter(new FileOutputStream("d:/abc.txt"));
@@ -54,13 +54,13 @@ public class RandomAccessMain {
 
 
 
-    public static void main1(String[] args) {
+    public static void main(String[] args) {
 
         //String filePathName = "/Users/lilanfeng/Desktop/bigFile.txt";
 
         Map<String,String> inputFileMap = new HashMap<>();
-        inputFileMap.put("/Users/lilanfeng/Desktop/bigFile.txt","662MB");
-        inputFileMap.put("/Users/lilanfeng/Desktop/bigFile500Mb.txt","500MB");
+        //inputFileMap.put("/Users/lilanfeng/Desktop/bigFile.txt","662MB");
+        //inputFileMap.put("/Users/lilanfeng/Desktop/bigFile500Mb.txt","500MB");
         inputFileMap.put("/Users/lilanfeng/Desktop/bigFile100Mb.txt","100MB");
         inputFileMap.put("/Users/lilanfeng/Desktop/bigFile50Mb.txt","50MB");
         inputFileMap.put("/Users/lilanfeng/Desktop/bigFile10Mb.txt","10MB");

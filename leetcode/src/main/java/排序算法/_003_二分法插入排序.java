@@ -29,15 +29,20 @@ public class _003_二分法插入排序 {
         System.out.println(Arrays.toString(array));
     }
 
+    /**
+     *
+     * @param array
+     */
     public static void sorting(int[] array){
         int length = array.length;
-
-        for (int i = 0; i < length; i++) {
+        //二分查找
+        Arrays.binarySearch(array,3);
+        for (int i = 1; i < length; i++) {
             int insertNum = array[i];
             int left = 0;
             int right = i - 1;
             int mid = 0;
-            while (left < right){
+            while (left <= right){
                 mid = (left + right) / 2;
                 if(insertNum < array[mid]){
                     right = mid -1;
@@ -45,10 +50,10 @@ public class _003_二分法插入排序 {
                     left = mid+1;
                 }
             }
+
             for (int j = i-1; j >= left ; j--) {
                 array[j+1] = array[j];
             }
-
             if( left != i ){
                 array[left] = insertNum;
             }

@@ -93,7 +93,7 @@ public class MemoryMapRandomAccessFileReader extends BaseReader implements Close
         if(position >= limit){
             return null;
         }
-        byte[] arr = new byte[336];
+        byte[] arr = new byte[512];
         int arrPos = 0;
         while (true){
             byte b = mappedByteBuffer.get(position++);

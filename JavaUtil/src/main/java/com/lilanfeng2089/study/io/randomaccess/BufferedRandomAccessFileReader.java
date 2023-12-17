@@ -85,7 +85,7 @@ public class BufferedRandomAccessFileReader extends BaseReader  implements Close
                     return null;
                 }
             }
-            byte[] arr = new byte[336];
+            byte[] arr = new byte[512];
             int arrPos = 0;
             while (position <= limit){
                 byte b = buffer[position++];

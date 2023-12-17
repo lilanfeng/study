@@ -29,6 +29,7 @@ public class CuratorClient {
         deleteNode(client1,path);
 
         getNodeSample(client1,childrenPath);
+        InterProcessMutex
 
         setNodeSample(client1,childrenPath);
 

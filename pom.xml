@@ -16,6 +16,9 @@
         <module>ip2region</module>
         <module>netty-websocket-springboot</module>
         <module>zdy-spring-boot-starter</module>
+        <module>spring-boot-2-7-17-demo</module>
+        <module>spring-boot-demo</module>
+        <module>lucene_index</module>
     </modules>
 
     <!-- license -->
