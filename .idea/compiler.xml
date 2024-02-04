@@ -22,19 +22,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
-      <module name="huawei-od" target="1.8" />
-      <module name="ip2region" target="8" />
-      <module name="JavaUtil" target="1.8" />
-      <module name="leetcode" target="8" />
-      <module name="lucene_index" target="8" />
-      <module name="nettywebsocketspringboot" target="8" />
-      <module name="readinglist" target="1.8" />
-      <module name="spring-boot-2-7-17-demo" target="1.8" />
-      <module name="spring-boot-2-7-17-web-war" target="1.8" />
-      <module name="spring-boot-demo" target="17" />
-      <module name="study" target="1.5" />
-      <module name="zdy-spring-boot-starter" target="8" />
-      <module name="zookeeperclient" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

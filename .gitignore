@@ -30,3 +30,6 @@ hs_err_pid*
 /docs/ppt/~*.pptx
 /docs/config/docker.config
 */target/
+.idea
+./*/*.iml
+.gitee

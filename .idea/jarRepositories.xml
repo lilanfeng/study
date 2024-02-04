@@ -12,6 +12,11 @@
       <option name="url" value="http://52.83.9.223:8081/repository/maven-public/" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="baymax-releases" />
+      <option name="name" value="Nexus Release Repository" />
+      <option name="url" value="http://maven.youzanyun.com/repository/maven-releases/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="aliyunRepository1" />
       <option name="name" value="aliyunRepository1" />
       <option name="url" value="https://repo1.maven.org/maven2/" />
@@ -35,6 +40,16 @@
       <option name="id" value="mavenRepository1" />
       <option name="name" value="mavenRepository1" />
       <option name="url" value="https://repo.maven.apache.org/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="central" />
+      <option name="url" value="http://192.168.102.125:8081/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="snapshot" />
+      <option name="name" value="snapshot" />
+      <option name="url" value="http://192.168.102.125:8081/nexus/content/repositories/snapshots/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="aliyunRepository1" />
