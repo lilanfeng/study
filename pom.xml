@@ -19,6 +19,8 @@
         <module>spring-boot-2-7-17-demo</module>
         <module>spring-boot-demo</module>
         <module>lucene_index</module>
+        <module>rapid-ocr</module>
+        <module>rabbitmq-simple</module>
     </modules>
 
     <!-- license -->
