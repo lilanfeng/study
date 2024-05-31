@@ -32,7 +32,7 @@ public class Provider {
         for (int i = 0; i < 1000000000; i++) {
             String messge = "hello rabitmq number: " + i;
             channel.basicPublish("","hello",null,messge.getBytes());
-            Thread.sleep(5);
+            //Thread.sleep(5);
         }
 
         //closed
