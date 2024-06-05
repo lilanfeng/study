@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.Reader;
+import java.math.BigDecimal;
 
 /**
  * @program: com.lilanfeng2089.mybatis.test
@@ -38,5 +39,23 @@ public class ApiTest {
         User user =  userDao.queryUserInfoById("10001");
         logger.info("测试结果：{}",user);
 
+    }
+
+    public static void main(String[] args) {
+        if(0.1 + 0.2 == 0.3){
+            System.out.println(0.1+0.2+"true");
+        }else{
+            System.out.println(0.1+0.2+"false");
+        }
+
+        if((0.1*10 + 0.2*10)/10 == 0.3){
+            System.out.println((0.1*10 + 0.2*10)/10+"true");
+        }else{
+            System.out.println((0.1*10 + 0.2*10)/10+"false");
+        }
+        BigDecimal b1 = new BigDecimal("0.1"); //错误用法 存在精度损失的风险
+        BigDecimal b2 = BigDecimal.valueOf(0.2);  //推荐用法
+        BigDecimal d =  b1.add(b2);
+        System.out.println(d);
     }
 }
