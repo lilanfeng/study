@@ -23,6 +23,7 @@
         <module>rabbitmq-simple</module>
         <module>mybatis-step-01</module>
         <module>mybatis-step-02</module>
+        <module>mybatis-step-03</module>
     </modules>
 
     <!-- license -->

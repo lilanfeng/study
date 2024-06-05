@@ -2,12 +2,10 @@ package com.lilanfeng2089.mybatis.test.dao.com.lilanfeng2089.mybatis.test;
 
 import com.lilanfeng2089.mybatis.binding.MapperProxyFactory;
 import com.lilanfeng2089.mybatis.test.dao.IUserDao;
-import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.annotation.processing.SupportedAnnotationTypes;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,7 +29,6 @@ public class TestMapperProxyFactory {
         IUserDao userDao = factory.newInstance(sqlSession);
 
         String res = userDao.queryUserName("10001");
-        System.out.println("测试结果：" + res);
         logger.info("测试结果：{}",res);
 
     }

@@ -1,6 +1,7 @@
 package com.lilanfeng2089.mybatis.binding;
 
 import cn.hutool.core.lang.ClassScanner;
+import com.lilanfeng2089.mybatis.session.Configuration;
 import com.lilanfeng2089.mybatis.session.SqlSession;
 
 import java.util.HashMap;
@@ -19,6 +20,9 @@ public class MapperRegistry {
      * 将已添加的映射器代理加入到HashMap中去
      */
     private final Map<Class<?>, MapperProxyFactory<?>> knownMappers = new HashMap<>();
+
+    public MapperRegistry(Configuration configuration) {
+    }
 
     public <T> T getMapper(Class<T> type, SqlSession sqlSession) {
         final MapperProxyFactory<T> mapperProxyFactory = (MapperProxyFactory<T>) knownMappers.get(type);
