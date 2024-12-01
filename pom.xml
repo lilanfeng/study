@@ -19,7 +19,15 @@
         <module>spring-boot-2-7-17-demo</module>
         <module>spring-boot-demo</module>
         <module>lucene_index</module>
+<<<<<<< HEAD
         <module>mq-demo</module>
+=======
+        <module>rapid-ocr</module>
+        <module>rabbitmq-simple</module>
+        <module>mybatis-step-01</module>
+        <module>mybatis-step-02</module>
+        <module>mybatis-step-03</module>
+>>>>>>> bf395376b9ad5478427196520369d0c7fd4a7678
     </modules>
 
     <!-- license -->
@@ -104,18 +112,18 @@
                         </executions>
                     </plugin>
 
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>attach-javadocs</id>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
+<!--                    <plugin>-->
+<!--                        <groupId>org.apache.maven.plugins</groupId>-->
+<!--                        <artifactId>maven-javadoc-plugin</artifactId>-->
+<!--                        <executions>-->
+<!--                            <execution>-->
+<!--                                <id>attach-javadocs</id>-->
+<!--                                <goals>-->
+<!--                                    <goal>jar</goal>-->
+<!--                                </goals>-->
+<!--                            </execution>-->
+<!--                        </executions>-->
+<!--                    </plugin>-->
 
 
                     <!-- Gpg Signature -->

@@ -9,14 +9,11 @@
         <module name="spring-boot-2-7-17-web-war" />
         <module name="nettywebsocketspringboot" />
         <module name="spring-boot-2-7-17-demo" />
-        <module name="zookeeperclient" />
-        <module name="leetcode" />
         <module name="JavaUtil" />
         <module name="ip2region" />
         <module name="mq-demo" />
         <module name="spring-boot-demo" />
         <module name="zdy-spring-boot-starter" />
-        <module name="huawei-od" />
         <module name="lucene_index" />
         <module name="readinglist" />
       </profile>
