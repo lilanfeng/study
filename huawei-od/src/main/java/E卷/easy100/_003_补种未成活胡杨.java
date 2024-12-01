@@ -1,0 +1,124 @@
+package E卷.easy100;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+/**
+ * @author lilanfeng2089，微信：lilanfeng2089
+ * @description
+ * @github https://github.com/lilanfeng
+ * @Copyright 公众号：lilanfeng2089 | 博客：https://lilanfeng2089.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
+ */
+public class _003_补种未成活胡杨 {
+    /**
+     * 近些年来，我国防沙治沙取得显著成果。某沙漠新种植N棵胡杨（编号1-N），排成一排。
+     * 一个月后，有M棵胡杨未能成活。
+     * 现可补种胡杨K棵，请问如何补种（只能补种，不能新种），可以得到最多的连续胡杨树？
+     * 输入描述
+     * N 总种植数量，1 <= N <= 100000
+     * M 未成活胡杨数量，M 个空格分隔的数，按编号从小到大排列，1 <= M <= N
+     * K 最多可以补种的数量，0 <= K <= M
+     * 输出描述
+     * 最多的连续胡杨棵树
+     * 示例1
+     * 输入
+     * 5
+     * 2
+     * 2 4
+     * 1
+     * 输出
+     * 3
+     * 说明
+     * 补种到2或4结果一样，最多的连续胡杨棵树都是3。
+     * 示例2
+     * 输入
+     * 10
+     * 3
+     * 2 4 7
+     * 1
+     * 输出
+     * 6
+     * 说明
+     * 种第7棵树，最多连续胡杨树棵数位6（5，6，7，8，9，10）
+     *
+     * 解题思路
+     * 这道题目主要是考察如何通过补种胡杨树，使得胡杨树形成【最长的连续序列】。
+     * 示例解释
+     * 示例1
+     * 输入：
+     * 5
+     * 2
+     * 2 4
+     * 1
+     * 解释：
+     *
+     * 胡杨树总共有 5 棵，编号分别是 1, 2, 3, 4, 5。
+     * 未成活的胡杨树编号是 2 和 4。
+     * 只能补种 1 棵树。
+     * 选择补种位置：
+     * 可以补种编号为2的树，得到序列 1, 2, 3，最多连续 3 棵树。
+     * 或者补种编号为4的树，得到序列 3, 4, 5，同样可以得到最多连续 3 棵树。
+     * 因此，输出结果为 3。
+     *
+     * 示例2
+     * 输入：
+     * 10
+     * 3
+     * 2 4 7
+     * 1
+     * 解释：
+     *
+     * 胡杨树总共有 10 棵，编号分别是 1 到 10。
+     * 未成活的胡杨树编号是 2, 4, 7。
+     * 只能补种 1 棵树。
+     * 选择补种位置：
+     * 如果补种编号为7的树，可以形成最长连续序列 5, 6, 7, 8, 9, 10，连续的胡杨树棵数为 6。
+     * 其他补种选择（如2或4）得到的最长连续胡杨树棵数较少。
+     * 因此，输出结果为 6。
+     */
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int m = scanner.nextInt();
+        int[] deadTrees = new int[m];
+        for (int i = 0; i < m; i++) {
+            deadTrees[i] = scanner.nextInt();
+        }
+        int k = scanner.nextInt();
+        int longestSequence = findLongestSequence(n, m, k, deadTrees);
+        System.out.println(longestSequence);
+    }
+
+    /**
+     * 找到最长的连续胡杨树  使用快慢指针
+     *
+     * @param n    胡杨树木的总数
+     * @param m    未活活胡杨树木的数量
+     * @param k    最多可以补种的数量
+     * @param deadTrees 未活活胡杨树木的编号
+     * @return 最长的连续胡杨树木的数量
+     */
+    public static int findLongestSequence(int n, int m, int k, int[] deadTrees) {
+        int[] treeStatus = new int[n];
+        Arrays.fill(treeStatus,0);
+        for (int deadTree : deadTrees) {
+            treeStatus[deadTree-1] = 1;
+        }
+        int left = 0;
+        int maxLength = 0;
+        int sumLeft = 0;
+        int sumRight = 0;
+        for (int right = 0; right < n; right++) {
+            sumRight += treeStatus[right];
+            while (sumRight - sumLeft > k) {
+                sumLeft += treeStatus[left];
+                left++;
+            }
+            // 更新最大长度
+            maxLength = Math.max(maxLength, right - left);
+        }
+
+       return maxLength;
+    }
+}

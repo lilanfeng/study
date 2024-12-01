@@ -15,6 +15,11 @@ public class ArrayListTest {
 
     public static void main(String[] args) {
         remove20To50();
+
+        ArrayList list = new ArrayList();
+        list.add(1);
+        update(list);
+        System.out.println(list.get(1));
     }
 
 
@@ -68,5 +73,17 @@ public class ArrayListTest {
             return false;
         } return true;}).collect(Collectors.toList());
 
+    }
+
+
+    /**
+     * 测试Java 参数的传递方式是否值传递方式   验证结果：值传递
+     * @param list
+     */
+    static void update(ArrayList list){
+        list.add(2);
+        list = new ArrayList();
+        list.add(3);
+        list.add(4);
     }
 }

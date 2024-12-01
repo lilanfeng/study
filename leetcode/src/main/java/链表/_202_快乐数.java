@@ -1,5 +1,6 @@
 package 链表;
 
+import java.util.HashSet;
 import java.util.Scanner;
 
 /**
@@ -40,14 +41,19 @@ public class _202_快乐数 {
 
         Scanner sc = new Scanner(System.in);
         while (sc.hasNextLine()){
-            System.out.println(isHappy(Integer.parseInt(sc.nextLine())));
+            System.out.println(isHappy2(Integer.parseInt(sc.nextLine())));
         }
 
     }
 
+    /**
+     * 快慢指针 判断是否是快乐数
+     * @param n
+     * @return
+     */
     public static boolean isHappy(int n){
-        int fast = getNext(getNext(n));
         int slow = getNext(n);
+        int fast = getNext(getNext(n));
 
         while (fast != slow ){
             slow = getNext(slow);
@@ -59,6 +65,23 @@ public class _202_快乐数 {
             return false;
         }
 
+    }
+
+    /**
+     * 循环判断，判断是否是快乐数
+     * @param n
+     * @return
+     */
+    public static boolean isHappy2(int n){
+        HashSet<Integer> existSet = new HashSet<>();
+        while (n != 1){
+            existSet.add(n);
+            n = getNext(n);
+            if(existSet.contains(n)){
+                return false;
+            }
+        }
+        return true;
     }
 
     private static int getNext(int n){

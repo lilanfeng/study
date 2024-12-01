@@ -19,6 +19,7 @@
         <module>spring-boot-2-7-17-demo</module>
         <module>spring-boot-demo</module>
         <module>lucene_index</module>
+        <module>mq-demo</module>
     </modules>
 
     <!-- license -->

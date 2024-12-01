@@ -35,8 +35,7 @@ public class _003_二分法插入排序 {
      */
     public static void sorting(int[] array){
         int length = array.length;
-        //二分查找
-        Arrays.binarySearch(array,3);
+
         for (int i = 1; i < length; i++) {
             int insertNum = array[i];
             int left = 0;

@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/ip2region/ip2region.iml" filepath="$PROJECT_DIR$/ip2region/ip2region.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/leetcode/leetcode.iml" />
       <module fileurl="file://$PROJECT_DIR$/lucene_index/lucene_index.iml" filepath="$PROJECT_DIR$/lucene_index/lucene_index.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mq-demo/mq-demo.iml" filepath="$PROJECT_DIR$/mq-demo/mq-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-websocket-springboot/nettywebsocketspringboot.iml" filepath="$PROJECT_DIR$/netty-websocket-springboot/nettywebsocketspringboot.iml" />
       <module fileurl="file://$PROJECT_DIR$/readinglist/readinglist.iml" filepath="$PROJECT_DIR$/readinglist/readinglist.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-2-7-17-demo/spring-boot-2-7-17-demo.iml" filepath="$PROJECT_DIR$/spring-boot-2-7-17-demo/spring-boot-2-7-17-demo.iml" />

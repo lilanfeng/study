@@ -46,7 +46,8 @@ public class _057_食堂供餐 {
             // 第三行输入每批次所需的午餐份数
             // 此处dinners中的元素都是String，后面需要转换成int处理
             String strDinners = sc.nextLine();
-            String[] dinners = strDinners.split(" "); // dinners.length == count
+            String[] dinners = strDinners.split(" ");
+            // dinners.length == count
 
             processDinners(count, stockQty, dinners);
         }

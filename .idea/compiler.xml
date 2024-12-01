@@ -8,15 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-2-7-17-web-war" />
         <module name="nettywebsocketspringboot" />
-        <module name="spring-boot-demo" />
-        <module name="zdy-spring-boot-starter" />
         <module name="spring-boot-2-7-17-demo" />
-        <module name="huawei-od" />
         <module name="zookeeperclient" />
-        <module name="lucene_index" />
         <module name="leetcode" />
         <module name="JavaUtil" />
         <module name="ip2region" />
+        <module name="mq-demo" />
+        <module name="spring-boot-demo" />
+        <module name="zdy-spring-boot-starter" />
+        <module name="huawei-od" />
+        <module name="lucene_index" />
         <module name="readinglist" />
       </profile>
     </annotationProcessing>
@@ -27,6 +28,7 @@
       <module name="JavaUtil" target="1.8" />
       <module name="leetcode" target="8" />
       <module name="lucene_index" target="8" />
+      <module name="mq-demo" target="8" />
       <module name="nettywebsocketspringboot" target="8" />
       <module name="readinglist" target="1.8" />
       <module name="spring-boot-2-7-17-demo" target="1.8" />

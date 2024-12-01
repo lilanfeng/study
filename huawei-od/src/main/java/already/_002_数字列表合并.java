@@ -60,6 +60,10 @@ public class _002_数字列表合并 {
      *  3
      *  1
      *  2，5，6，7，9，5，7
+     *
+     *  输出：
+     *   2，5，6，7，9，5，7
+     *
      */
     public static List<String> megList(int mergeCount,int number,int maxLen,Map<String,List<String>> mapLists){
         List<String> resultList = new ArrayList<>();
