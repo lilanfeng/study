@@ -10,9 +10,9 @@ public class ListNode {
     ListNode(int val){
         this.val = val;
     }
-    ListNode(int val,ListNode next) {
+    ListNode(int val,ListNode node) {
         this.val = val;
-        this.next = next;
+        this.next = node;
     }
 
 }

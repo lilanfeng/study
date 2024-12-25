@@ -16,21 +16,26 @@ public class _509_斐波那契数 {
      * @param n
      * @return
      */
-    public Long  compulte(Long n) {
+    public Long  computer(Long n) {
         if (n <= 1) {
             return 0L;
         }
         if (n == 2) {
             return 1L;
         }
-        return compulte(n - 1) + compulte(n - 2) + compulte(n - 3);
+        return computer(n - 1) + computer(n - 2) + computer(n - 3);
     }
 
     public static void main(String[] args) {
-        System.out.println(new _509_斐波那契数().compulte_one(10000000L));
+        System.out.println(new _509_斐波那契数().computer_one(10000000L));
     }
 
-    public Long  compulte_one(Long n) {
+    /**
+     * 中间缓存求解斐波那契数列
+     * @param n 求解的位置
+     * @return 求解结果
+     */
+    public Long  computer_one(Long n) {
         if (n <= 1) {
             return 0L;
         }

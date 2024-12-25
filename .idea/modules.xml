@@ -3,13 +3,17 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaUtil/JavaUtil.iml" filepath="$PROJECT_DIR$/JavaUtil/JavaUtil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huawei-od/huawei-od.iml" filepath="$PROJECT_DIR$/huawei-od/huawei-od.iml" />
       <module fileurl="file://$PROJECT_DIR$/ip2region/ip2region.iml" filepath="$PROJECT_DIR$/ip2region/ip2region.iml" />
       <module fileurl="file://$PROJECT_DIR$/lucene_index/lucene_index.iml" filepath="$PROJECT_DIR$/lucene_index/lucene_index.iml" />
       <module fileurl="file://$PROJECT_DIR$/mq-demo/mq-demo.iml" filepath="$PROJECT_DIR$/mq-demo/mq-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-step-01/mybatis-step-01.iml" filepath="$PROJECT_DIR$/mybatis-step-01/mybatis-step-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-step-02/mybatis-step-02.iml" filepath="$PROJECT_DIR$/mybatis-step-02/mybatis-step-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-step-03/mybatis-step-03.iml" filepath="$PROJECT_DIR$/mybatis-step-03/mybatis-step-03.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-websocket-springboot/nettywebsocketspringboot.iml" filepath="$PROJECT_DIR$/netty-websocket-springboot/nettywebsocketspringboot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/readinglist/readinglist.iml" filepath="$PROJECT_DIR$/readinglist/readinglist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitmq-simple/rabbitmq-simple.iml" filepath="$PROJECT_DIR$/rabbitmq-simple/rabbitmq-simple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rapid-ocr/rapid-ocr.iml" filepath="$PROJECT_DIR$/rapid-ocr/rapid-ocr.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-2-7-17-demo/spring-boot-2-7-17-demo.iml" filepath="$PROJECT_DIR$/spring-boot-2-7-17-demo/spring-boot-2-7-17-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-2-7-17-web-war/spring-boot-2-7-17-web-war.iml" filepath="$PROJECT_DIR$/spring-boot-2-7-17-web-war/spring-boot-2-7-17-web-war.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-demo/spring-boot-demo.iml" filepath="$PROJECT_DIR$/spring-boot-demo/spring-boot-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/zdy-spring-boot-starter/zdy-spring-boot-starter.iml" filepath="$PROJECT_DIR$/zdy-spring-boot-starter/zdy-spring-boot-starter.iml" />
     </modules>

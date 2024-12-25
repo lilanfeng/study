@@ -87,7 +87,6 @@ public class _009_第K个排列 {
             resultList.add(current);
             return;
         }
-
         for (int i = 0; i < nums.length; i++) {
             int first = nums[i];
             int[] newNums = new int[nums.length - 1];

@@ -77,7 +77,7 @@ public class RandomAccessMain {
     }
 
     /**
-     * 	RandomAccessFile	BufferedReader
+     * 	     RandomAccessFile	BufferedReader
      * 第一次	9580ms	63ms
      * 第二次	9379ms	77ms
      * 第三次	9340ms	66ms

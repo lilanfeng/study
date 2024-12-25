@@ -37,12 +37,12 @@ public class _001_找出所有可能的两数之和 {
         while (sc.hasNextLine()){
             int[] arr = Arrays.stream(sc.nextLine().split(",")).mapToInt(Integer::parseInt).toArray();
             int target = Integer.parseInt(sc.nextLine());
-            HashSet<List<Integer>> targetMap = twoSumIndex(target,arr);
+            HashSet<String> targetMap = twoSumIndex(target,arr);
             //打印找到的结果处理
-            if(targetMap.size()> 0){
-                Iterator<List<Integer>> iterator = targetMap.iterator();
+            if(targetMap.size() > 0){
+                Iterator<String> iterator = targetMap.iterator();
                 while (iterator.hasNext()){
-                    List<Integer> list = iterator.next();
+                    String list = iterator.next();
                     System.out.println(list);
                 }
             }
@@ -54,7 +54,7 @@ public class _001_找出所有可能的两数之和 {
      * @param target
      * @param arr
      */
-    public static HashSet<List<Integer>> twoSumIndex(int target,int[] arr){
+    public static HashSet<String> twoSumIndex(int target,int[] arr){
         Map<Integer, List<Integer>> arrMap = new HashMap<>();
         for (int i = 0; i < arr.length; i++) {
             List<Integer> list = null;
@@ -68,7 +68,7 @@ public class _001_找出所有可能的两数之和 {
                 arrMap.put(arr[i],list);
             }
         }
-        HashSet<List<Integer>> targetMap = new HashSet<>();
+        HashSet<String> targetMap = new HashSet<>();
         //遍历寻找数据
         for (int i = 0; i < arr.length; i++) {
             int temp = arr[i];
@@ -76,9 +76,11 @@ public class _001_找出所有可能的两数之和 {
             if(arrMap.containsKey(result)){
                 //找到存在的两数和
                 List<Integer> list = arrMap.get(result);
+                //避免重复 重复的索引位需要去除
                 for (int j = 0; j < list.size(); j++) {
-                    if(!list.get(j).equals(i)){
-                        targetMap.add(new ArrayList<>(Arrays.asList(Math.min(i,list.get(j)),Math.max(i,list.get(j)))));
+                    if (!list.get(j).equals(i)) {
+                        String tempStr = Math.min(i, list.get(j)) + "," + Math.max(i, list.get(j));
+                        targetMap.add(tempStr);
                     }
                 }
             }

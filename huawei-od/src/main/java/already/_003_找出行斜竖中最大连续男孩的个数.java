@@ -1,5 +1,7 @@
 package already;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -37,8 +39,69 @@ public class _003_找出行斜竖中最大连续男孩的个数 {
                 inputArr[i][j] = temp[j];
             }
         }
+
         System.out.println(findMaxMale(inputArr));
+
+        List<List<String>> students = new java.util.ArrayList<>();
+        for (int i = 0; i < hang; i++) {
+            students.add(java.util.Arrays.asList(inputArr[i]));
+        }
+        List<Integer> res = new java.util.ArrayList<>();
+        for (int i = 0; i < hang; i++) {
+            for (int j = 0; j < shu; j++) {
+                getMaxConnected(students, i, j, res);
+            }
+        }
+        // 对结果数组排序
+        Collections.sort(res);
+        // 输出最大的连续的M的个数
+        System.out.println(res.get(res.size() - 1));
+
+
     }
+
+    public static void getMaxConnected(List<List<String>> students, int row, int column, List<Integer> res) {
+        int len = 1; // 初始化连续的M的个数为1
+        int a = 0, b = 0; // 初始化行和列的索引
+        int m = students.size(), n = students.get(0).size(); // 获取方阵的行数和列数
+        if (column < n) {  // 从左往右搜索
+            a = row;
+            b = column;
+            while (b < n - 1 && students.get(a).get(++b).equals("M")) { // 不越界且下一个元素为M
+                len++; // 连续的M的个数加1
+            }
+            res.add(len); // 把连续的M的个数加入结果数组
+            len = 1; // 重新初始化连续的M的个数为1
+        }
+        if (row < m) {  // 从上往下搜索
+            a = row;
+            b = column;
+            while (a < m - 1 && students.get(++a).get(b).equals("M")) { // 不越界且下一个元素为M
+                len++; // 连续的M的个数加1
+            }
+            res.add(len); // 把连续的M的个数加入结果数组
+            len = 1; // 重新初始化连续的M的个数为1
+        }
+        if (row < m && column < n) {  // 对角线搜索
+            a = row;
+            b = column;
+            while ((a < m - 1 && b < n - 1) && students.get(++a).get(++b).equals("M")) { // 不越界且下一个元素为M
+                len++; // 连续的M的个数加1
+            }
+            res.add(len); // 把连续的M的个数加入结果数组
+            len = 1; // 重新初始化连续的M的个数为1
+        }
+        if (row >= 0 && column < n) {  // 从右往左搜索
+            a = row;
+            b = column;
+            while ((a > 0 && b < n - 1) && students.get(--a).get(++b).equals("M")) { // 不越界且下一个元素为M
+                len++; // 连续的M的个数加1
+            }
+            res.add(len); // 把连续的M的个数加入结果数组
+        }
+    }
+
+
 
     /**
      * @param inputArr

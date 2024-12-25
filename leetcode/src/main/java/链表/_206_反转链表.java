@@ -35,12 +35,19 @@ public class _206_反转链表 {
      * @return
      */
     public ListNode reverseList(ListNode head) {
+        //上一个节点
         ListNode prev = null;
+        //当前节点
         ListNode current = head;
         while(current != null){
+            //保存当前节点的下一个节点
             ListNode next = current.next;
+
+            //当前节点指向上一个节点
             current.next = prev;
+            //上一个节点指向当前节点
             prev = current;
+            //当前节点指向下一个节点
             current = next;
         }
         return prev;

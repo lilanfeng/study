@@ -25,13 +25,10 @@ hs_err_pid*
 /*.iml
 
 /*/*.iml
-/.idea/*
-.idea/*
 
 /docs/ppt/~*.pptx
 /docs/config/docker.config
 */target/
-.idea
 ./*/*.iml
 .gitee
 .gitlab
@@ -57,4 +54,5 @@ hs_err_pid*
 .env.production.php
 .env.staging
 .env.production
-.env.staging.php
+.idea/*
+*/.idea/*

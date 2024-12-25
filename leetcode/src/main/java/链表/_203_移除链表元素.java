@@ -1,7 +1,5 @@
 package 链表;
 
-import java.util.List;
-
 /**
  *  给你一个链表的头节点head和一个整数val，请你删除链表中所有满足Node.val == val的节点，并返回新的头节点。
  *  示例1：
@@ -28,14 +26,16 @@ public class _203_移除链表元素 {
      * @return
      */
     public ListNode removeElements(ListNode head, int val) {
-        //删除值相同的头结点后，可能新的头结点也值相等，用循环解决
+        //删除值相同的头结点后，可能新的头结点也值相等，需要用循环解决
         while (head != null && head.val == val) {
             head = head.next;
         }
+        //
         if (head == null) {
             return null;
         }
         ListNode prev = head;
+        // 遍历后续的节点是否跟删除元素相等
         while (prev.next != null) {
             if (prev.next.val == val) {
                 prev.next = prev.next.next;
@@ -59,8 +59,8 @@ public class _203_移除链表元素 {
 
         ListNode prev = dummyNode;
 
-        while (prev.next != null){
-            if(prev.next.val == val){
+        while (prev.next != null) {
+            if (prev.next.val == val) {
                 prev.next = prev.next.next;
             } else {
                 prev = prev.next;

@@ -2,20 +2,25 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-2-7-17-web-war" />
         <module name="nettywebsocketspringboot" />
         <module name="spring-boot-2-7-17-demo" />
+        <module name="mybatis-step-02" />
+        <module name="rapid-ocr" />
+        <module name="mybatis-step-01" />
+        <module name="mybatis-step-03" />
         <module name="JavaUtil" />
         <module name="ip2region" />
         <module name="mq-demo" />
         <module name="spring-boot-demo" />
         <module name="zdy-spring-boot-starter" />
+        <module name="rabbitmq-simple" />
+        <module name="huawei-od" />
         <module name="lucene_index" />
-        <module name="readinglist" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,7 +31,12 @@
       <module name="leetcode" target="8" />
       <module name="lucene_index" target="8" />
       <module name="mq-demo" target="8" />
+      <module name="mybatis-step-01" target="8" />
+      <module name="mybatis-step-02" target="8" />
+      <module name="mybatis-step-03" target="8" />
       <module name="nettywebsocketspringboot" target="8" />
+      <module name="rabbitmq-simple" target="8" />
+      <module name="rapid-ocr" target="8" />
       <module name="readinglist" target="1.8" />
       <module name="spring-boot-2-7-17-demo" target="1.8" />
       <module name="spring-boot-2-7-17-web-war" target="1.8" />
