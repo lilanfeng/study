@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>leetcode</module>
-<!--        <module>huawei-od</module>-->
+        <module>huawei-od</module>
         <module>JavaUtil</module>
         <module>zookeeperclient</module>
         <module>ip2region</module>

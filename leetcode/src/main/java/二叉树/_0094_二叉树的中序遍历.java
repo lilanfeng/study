@@ -50,7 +50,7 @@ public class _0094_二叉树的中序遍历 {
     }
 
     /**
-     * 递归
+     *
      * @param root
      * @return
      */
@@ -70,10 +70,16 @@ public class _0094_二叉树的中序遍历 {
         return result;
     }
 
+    /**
+     * 递归实现遍历中序遍历
+     * @param root
+     * @param result
+     */
     public void inorderTraversal(TreeNode root, List<Integer> result) {
         if (root.left != null) {
             inorderTraversal(root.left, result);
         }
+        // 根节点入结果
         result.add(root.val);
         if (root.right != null) {
             inorderTraversal(root.right, result);
@@ -83,7 +89,7 @@ public class _0094_二叉树的中序遍历 {
 
 
     /**
-     * 迭代方法
+     * 迭代方法 借助栈来实现中序遍历 （先进后出）
      */
     public List<Integer> inorderTraversal2(TreeNode root) {
         List<Integer> result = new ArrayList<>();
