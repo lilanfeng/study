@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="004a7d39-c8d6-4443-8af6-049b0cc0355e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../leetcode/src/main/java/二叉树/_0095_不同的二叉搜索树二.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaUtil/src/main/java/com/lilanfeng2089/study/therad/PrintABC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../huawei-od/src/main/java/already/_008_最长的指定瑕疵度的元音子串.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../interviewer-scope-knowledge/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../interviewer-scope-knowledge/src/main/java/com/lilanfeng2089/study/knowledge/jvm/MetaspaceDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../interviewer-scope-knowledge/src/main/java/com/lilanfeng2089/study/knowledge/jvm/Redmind.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaUtil/src/main/java/com/lilanfeng2089/study/interview/_2024/_003_threadSychornizedFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaUtil/src/main/java/com/lilanfeng2089/study/interview/_2024/_003_threadSychornizedFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaUtil/src/main/java/com/lilanfeng2089/study/therad/Callable01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaUtil/src/main/java/com/lilanfeng2089/study/therad/Callable01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaUtil/src/main/java/com/lilanfeng2089/study/therad/ThreadState.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaUtil/src/main/java/com/lilanfeng2089/study/therad/ThreadState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/kevin/middleware/db/router/dynamic/DynamicDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kevin/middleware/db/router/dynamic/DynamicDataSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/kevin/middleware/db/router/strategy/IDBRouterStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kevin/middleware/db/router/strategy/IDBRouterStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/kevin/middleware/db/router/strategy/impl/DBRouterStrategyHashCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kevin/middleware/db/router/strategy/impl/DBRouterStrategyHashCode.java" afterDir="false" />
@@ -14,16 +23,9 @@
       <change beforePath="$PROJECT_DIR$/target/db-router-spring-boot-starter-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/db-router-spring-boot-starter-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/db-router-spring-boot-starter.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/db-router-spring-boot-starter.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ip2region/ip2region.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ip2region/ip2region.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leetcode/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leetcode/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leetcode/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leetcode/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leetcode/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leetcode/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leetcode/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leetcode/src/main/java/二叉树/_0094_二叉树的中序遍历.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leetcode/src/main/java/二叉树/_0094_二叉树的中序遍历.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leetcode/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leetcode/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leetcode/src/main/java/全部/_001_两数之和.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leetcode/src/main/java/全部/_001_两数之和.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leetcode/src/main/java/链表/_002_两数相加.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leetcode/src/main/java/链表/_002_两数相加.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leetcode/src/main/java/动态规划/_0198_打家劫舍.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leetcode/src/main/java/动态规划/_0198_打家劫舍.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +174,15 @@
       <workItem from="1735165678653" duration="599000" />
       <workItem from="1735214771735" duration="599000" />
       <workItem from="1735220262352" duration="548000" />
-      <workItem from="1735227108461" duration="499000" />
+      <workItem from="1735227108461" duration="675000" />
+      <workItem from="1735771575239" duration="598000" />
+      <workItem from="1736029987347" duration="554000" />
+      <workItem from="1736202773728" duration="546000" />
+      <workItem from="1737647954956" duration="599000" />
+      <workItem from="1744928118067" duration="298000" />
+      <workItem from="1744928458416" duration="783000" />
+      <workItem from="1745058584684" duration="599000" />
+      <workItem from="1745100961282" duration="384000" />
     </task>
     <servers />
   </component>

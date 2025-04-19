@@ -47,7 +47,8 @@ public class _001_两数之和{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while (sc.hasNextLine()){
-            int[] nums = Arrays.stream(sc.nextLine().split(",")).mapToInt(Integer::parseInt).toArray();
+            //int[] nums = Arrays.stream(sc.nextLine().split(",")).mapToInt(Integer::parseInt).toArray();
+            int[] nums = new int[]{2,7,11,15};
             int target = Integer.parseInt(sc.nextLine());
             System.out.println(Arrays.toString(twoSum(nums, target)));
         }

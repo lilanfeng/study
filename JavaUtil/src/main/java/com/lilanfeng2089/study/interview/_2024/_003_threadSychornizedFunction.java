@@ -9,13 +9,24 @@ package com.lilanfeng2089.study.interview._2024;
  */
 public class _003_threadSychornizedFunction extends Thread{
 
-    private static int a = 0;
+    private  static int a = 0;
 
+//    @Override
+//    public synchronized  void run() {
+//
+//        for (int i = 0; i < 100; i++) {
+//            a++;
+//            System.out.println(Thread.currentThread().getName() + "---" + a);
+//        }
+//    }
     @Override
     public synchronized  void run() {
-        for (int i = 0; i < 100; i++) {
-            a++;
-            System.out.println(Thread.currentThread().getName() + "---" + a);
+
+        synchronized (this){
+            for (int i = 0; i < 100; i++) {
+                a++;
+                System.out.println(Thread.currentThread().getName() + "---" + a);
+            }
         }
     }
 
@@ -26,4 +37,6 @@ public class _003_threadSychornizedFunction extends Thread{
         _003_threadSychornizedFunction t2 = new _003_threadSychornizedFunction();
         t2.start();
     }
+
+
 }

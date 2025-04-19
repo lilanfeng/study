@@ -14,6 +14,7 @@
         <module name="mybatis-step-01" />
         <module name="mybatis-step-03" />
         <module name="JavaUtil" />
+        <module name="leetcode" />
         <module name="ip2region" />
         <module name="mq-demo" />
         <module name="spring-boot-demo" />
@@ -21,14 +22,16 @@
         <module name="rabbitmq-simple" />
         <module name="huawei-od" />
         <module name="lucene_index" />
+        <module name="interviewer-scope-knowledge" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
       <module name="huawei-od" target="1.8" />
+      <module name="interviewer-scope-knowledge" target="8" />
       <module name="ip2region" target="8" />
       <module name="JavaUtil" target="1.8" />
-      <module name="leetcode" target="8" />
+      <module name="leetcode" target="1.8" />
       <module name="lucene_index" target="8" />
       <module name="mq-demo" target="8" />
       <module name="mybatis-step-01" target="8" />

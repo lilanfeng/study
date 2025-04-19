@@ -34,15 +34,15 @@ public class _0198_打家劫舍 {
      */
 
     public static void main(String[] args) {
-        //int[] nums = {2,7,9,3,1};
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-        String n = input.replace("[","").replace("]","");
-        String[] split = n.split(",");
-        int[] nums = new int[split.length];
-        for (int i = 0; i < split.length; i++) {
-            nums[i] = Integer.parseInt(split[i]);
-        }
+        int[] nums = {2,7,9,3,1};
+//        Scanner scanner = new Scanner(System.in);
+//        String input = scanner.nextLine();
+//        String n = input.replace("[","").replace("]","");
+//        String[] split = n.split(",");
+//        int[] nums = new int[split.length];
+//        for (int i = 0; i < split.length; i++) {
+//            nums[i] = Integer.parseInt(split[i]);
+//        }
         System.out.println(rob(nums));
     }
 

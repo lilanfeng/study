@@ -16,10 +16,17 @@ public class Callable01 implements Callable<String> {
         return "Test";
     }
 
+    /**
+     * @description 测试Callable接口
+     * @param args
+     * @throws ExecutionException
+     * @throws InterruptedException
+     */
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         FutureTask task = new FutureTask(new Callable01());
         new Thread(task).start();
 
+        // 获取线程执行结果 阻塞获取方式
         System.out.println(task.get());
     }
 }

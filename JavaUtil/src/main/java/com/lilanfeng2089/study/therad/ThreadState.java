@@ -9,6 +9,13 @@ import java.util.concurrent.TimeUnit;
  * @Copyright 公众号：lilanfeng2089 | 博客：https://lilanfeng2089.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
  */
 public class ThreadState {
+
+    /**
+     * @author lilanfeng2089，微信：lilanfeng2089
+     * @description 线程状态
+     * @date 2024/3/28 10:08
+     * @param args
+     */
     public static void main(String[] args){
         new Thread(new TimeWaiting(),"TimeWaitingThread").start();
 
