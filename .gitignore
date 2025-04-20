@@ -56,3 +56,4 @@ hs_err_pid*
 .env.production
 .idea/*
 */.idea/*
+*/.idea/*.xml

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaUtil/JavaUtil.iml" filepath="$PROJECT_DIR$/JavaUtil/JavaUtil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/huawei-od/data-save.iml" filepath="$PROJECT_DIR$/huawei-od/data-save.iml" />
       <module fileurl="file://$PROJECT_DIR$/huawei-od/huawei-od.iml" filepath="$PROJECT_DIR$/huawei-od/huawei-od.iml" />
       <module fileurl="file://$PROJECT_DIR$/interviewer-scope-knowledge/interviewer-scope-knowledge.iml" filepath="$PROJECT_DIR$/interviewer-scope-knowledge/interviewer-scope-knowledge.iml" />
       <module fileurl="file://$PROJECT_DIR$/ip2region/ip2region.iml" filepath="$PROJECT_DIR$/ip2region/ip2region.iml" />
@@ -17,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/rapid-ocr/rapid-ocr.iml" filepath="$PROJECT_DIR$/rapid-ocr/rapid-ocr.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-2-7-17-demo/spring-boot-2-7-17-demo.iml" filepath="$PROJECT_DIR$/spring-boot-2-7-17-demo/spring-boot-2-7-17-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-demo/spring-boot-demo.iml" filepath="$PROJECT_DIR$/spring-boot-demo/spring-boot-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study.iml" filepath="$PROJECT_DIR$/study.iml" />
       <module fileurl="file://$PROJECT_DIR$/zdy-spring-boot-starter/zdy-spring-boot-starter.iml" filepath="$PROJECT_DIR$/zdy-spring-boot-starter/zdy-spring-boot-starter.iml" />
     </modules>
   </component>
