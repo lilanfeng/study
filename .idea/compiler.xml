@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="nettywebsocketspringboot" />
+        <module name="reactive-programming" />
         <module name="spring-boot-2-7-17-demo" />
         <module name="mybatis-step-02" />
         <module name="rapid-ocr" />
@@ -18,6 +19,7 @@
         <module name="ip2region" />
         <module name="mq-demo" />
         <module name="spring-boot-demo" />
+        <module name="kevin-demo-netty-1-00" />
         <module name="zdy-spring-boot-starter" />
         <module name="rabbitmq-simple" />
         <module name="huawei-od" />
@@ -31,6 +33,7 @@
       <module name="interviewer-scope-knowledge" target="8" />
       <module name="ip2region" target="8" />
       <module name="JavaUtil" target="1.8" />
+      <module name="kevin-demo-netty-1-00" target="8" />
       <module name="leetcode" target="1.8" />
       <module name="lucene_index" target="8" />
       <module name="mq-demo" target="8" />
@@ -40,6 +43,7 @@
       <module name="nettywebsocketspringboot" target="8" />
       <module name="rabbitmq-simple" target="8" />
       <module name="rapid-ocr" target="8" />
+      <module name="reactive-programming" target="8" />
       <module name="readinglist" target="1.8" />
       <module name="spring-boot-2-7-17-demo" target="1.8" />
       <module name="spring-boot-2-7-17-web-war" target="1.8" />

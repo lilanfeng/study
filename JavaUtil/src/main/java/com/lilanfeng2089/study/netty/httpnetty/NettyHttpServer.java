@@ -1,7 +1,5 @@
 package com.lilanfeng2089.study.netty.httpnetty;
 
-import com.lilanfeng2089.study.netty.chat.NettyChatServer;
-import com.lilanfeng2089.study.netty.chat.NettyChatServerHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;

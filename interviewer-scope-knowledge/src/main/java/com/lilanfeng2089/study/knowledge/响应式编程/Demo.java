@@ -1,0 +1,27 @@
+package com.lilanfeng2089.study.knowledge.响应式编程;
+
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+
+/**
+ * @author lilanfeng2089，微信：lilanfeng2089
+ * @description
+ * @date 2025/5/20 06:45
+ * @github https://github.com/lilanfeng
+ * @Copyright 公众号：lilanfeng2089 | 博客：https://lilanfeng2089.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
+ */
+public class Demo {
+
+    public static void main(String[] args) {
+
+        Flux.just(1, 2).concatWith(Mono.error(new IllegalArgumentException())).onErrorResume(e -> {
+            if (e instanceof IllegalStateException) {
+                return Mono.just(0);
+            } else if (e instanceof IllegalArgumentException) {
+                return Mono.just(-1);
+            }
+            return Mono.empty();
+        }).subscribe(System.out::println);
+    }
+
+}
